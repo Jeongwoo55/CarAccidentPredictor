@@ -8,11 +8,11 @@ D = np.matrix(pd.read_csv("/Users/nathaniel/Downloads/US_Accidents_Dec19.csv", h
 
 # We extract all rows and the first 2 columns into X_data
 # Then we flip it
-X_data = D[0:1000, [29,30]].transpose()
+X_data = D[1:1000, [29,30]].transpose()
 
 # We extract all rows and the last column into y_data
 # Then we flip it
-y_data = D[0:1000, 3].transpose()
+y_data = D[1:1000, 3].transpose()
 
 # And make a convenient variable to remember the number of input columns
 n = 2
