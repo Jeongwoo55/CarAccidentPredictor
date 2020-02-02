@@ -4,9 +4,13 @@ tf.disable_v2_behavior()
 import pandas as pd
 
 # First we load the entire CSV file into an m x 3
+<<<<<<< HEAD
 df = pd.read_csv("/Users/nathaniel/Downloads/US_Accidents_Dec19.csv", header=None, nrows=10000)
 df = df.fillna(0)
 D = np.matrix(df.values)
+=======
+D = np.matrix(pd.read_csv("C:\Users\jchoi\Desktop\CarAccidentPredictor\US_Accidents_Dec19.csv", header=None).values)
+>>>>>>> 7565dba5473ba749447cf54c483a63d2b445292d
 
 # We extract all rows and the first 2 columns into X_data
 # Then we flip it
